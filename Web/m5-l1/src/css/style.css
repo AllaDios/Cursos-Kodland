@@ -1,0 +1,161 @@
+/*Código de nuestra zona de trabajo*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px 'Montserrat', sant-serif;
+    color: #fff;
+    background: #272727;
+}
+
+h1, h2, p {
+    font-weight: 400;
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper {
+    padding: 5%;
+}
+
+.wrapper__title {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.comix {
+    border: 1px #fff solid;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.comix__item {
+    display: flex;
+}
+
+/* Seleccionar elementos impares y aplicar flexbox */
+.comix__item:nth-child(odd) {
+    justify-content: flex-end;
+}
+
+.comix__item div {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper__subtitle {
+    text-align: center;
+}
+
+.comix__button {
+    display: flex;
+    padding: 3%;
+    justify-content: center;
+}
+
+.task__button {
+    border: 1px #fff solid;
+    background: inherit;
+    color: #fff;
+    font: inherit;
+    padding: 2%;
+    width: fit-content;
+}
+
+.task__button:hover {
+    background: #fff;
+    color: black;
+}
+
+/*Tu código va aquí*/
+
+/* Estilos base para los globos de diálogo */
+.comix__img--1::before,
+.comix__img--2::after,
+.comix__img--3::before,
+.comix__img--4::after,
+.comix__img--5::before,
+.comix__img--6::after {
+    position: absolute;
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 250px;
+    font-size: 1.1em;
+}
+
+/* Posicionamiento de los elementos con respecto a las imágenes */
+.comix__img--1,
+.comix__img--2,
+.comix__img--3,
+.comix__img--4,
+.comix__img--5,
+.comix__img--6 {
+    position: relative;
+    margin: 20px;
+}
+
+/* Contenido de los globos de diálogo */
+.comix__img--1::before {
+    content: "¡Hola! ¡Soy Ben!";
+    top: -60px;
+    right: 20px;
+}
+
+.comix__img--2::after {
+    content: "¡Hey! ¿Qué tal?";
+    top: -40px;
+    left: 20px;
+}
+
+.comix__img--3::before {
+    content: "¡Me encanta programar!";
+    top: -60px;
+    right: 20px;
+}
+
+.comix__img--4::after {
+    content: "¡A mí también!";
+    top: -40px;
+    left: 20px;
+}
+
+.comix__img--5::before {
+    content: "¿Hacemos un proyecto juntos?";
+    top: -60px;
+    right: 20px;
+}
+
+.comix__img--6::after {
+    content: "¡Claro! ¡Será divertido!";
+    top: -40px;
+    left: 20px;
+}
+
+/* Triángulos para los globos de diálogo */
+.comix__img--1::before,
+.comix__img--3::before,
+.comix__img--5::before {
+    border-radius: 15px 15px 15px 0;
+}
+
+.comix__img--2::after,
+.comix__img--4::after,
+.comix__img--6::after {
+    border-radius: 15px 15px 0 15px;
+}
