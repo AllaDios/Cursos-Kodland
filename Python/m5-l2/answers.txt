@@ -1,0 +1,9 @@
+Tarea 1: Para encontrar el resultado, ejecuta el script data_analysis.py
+
+Tarea 2: Para encontrar el resultado, ejecuta el script data_analysis.py
+
+Tarea 3: Para encontrar el resultado, ejecuta el script data_analysis.py
+
+Tarea 4: Para encontrar el resultado, ejecuta el script data_analysis.py
+
+Tarea 5: Para encontrar el resultado, ejecuta el script data_analysis.py
